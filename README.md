@@ -59,6 +59,7 @@ command:
 ```bash
 python image_annotate.py -r /path/to/ref.mat:ref_img 
 -w /path/to/wvl.mat:wavelengths /path/to/image.mat:img_dat
+```
 
 will load the ref_img variable from ref.mat as the reference image,
 the wavelengths variable from the wvl.mat file as the image
