@@ -1,9 +1,5 @@
 # Simple interactive image annotation tool.
 
-## Based on code by Daniel Kornhauser from the matplotlib-users mailing 
-list available at the following url:
-http://www.mail-archive.com/matplotlib-users@lists.sourceforge.net/msg00662.html
-
 ## Requirements:
   - matplotlib
   - numpy
@@ -65,3 +61,8 @@ will load the ref_img variable from ref.mat as the reference image,
 the wavelengths variable from the wvl.mat file as the image
 wavelengths, and the img_dat variable from image.mat as the image data
 file.
+
+## Credit
+Based on code by Daniel Kornhauser from the matplotlib-users mailing 
+list available at the following url:
+http://www.mail-archive.com/matplotlib-users@lists.sourceforge.net/msg00662.html
