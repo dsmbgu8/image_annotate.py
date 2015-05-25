@@ -57,8 +57,7 @@ This syntax also works for the ref and wvl files. For instance, the
 command:
 
 ```bash
-python image_annotate.py -r /path/to/ref.mat:ref_img 
--w /path/to/wvl.mat:wavelengths /path/to/image.mat:img_dat
+python image_annotate.py -r /path/to/ref.mat:ref_img -w /path/to/wvl.mat:wavelengths /path/to/image.mat:img_dat
 ```
 
 will load the ref_img variable from ref.mat as the reference image,
