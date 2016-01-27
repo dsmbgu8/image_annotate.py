@@ -1,10 +1,15 @@
-# Simple python-based interactive image annotation tool
+# Simple python-based interactive image annotation tool requiring only numpy and matplotlib
 
-## Tested using:
+## Dependencies:
   - matplotlib
   - numpy
-  - scipy (for loading Matlab files)
-  - wxPython (for WXagg matplotlib backend)
+  - scipy (for loading .mat files, as necessary)
+
+## Tested using:
+  - OSX Mavericks, Yosemite
+  - matplotlib 1.4+
+  - numpy 1.10+
+  - scipy 0.14+
 
 ## Usage:
 ```
