@@ -15,7 +15,7 @@
 ```
 python image_annotate.py [options] [image_file]
   -h  --help         print this usage and exit
-  -r  --ref          reference image (RGB or RGBA image to display)
+  -r  --ref          reference image (RGB or RGBA image to display, useful if [image_file] contains >4 channels)
   -b  --bands        indices of reference bands (default=[0,1,2])
   -w  --wvl          wavelength file
   -l  --load-rois    load ROIs from file
