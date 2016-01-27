@@ -749,8 +749,9 @@ def main(argv=None):
             else:
                 ref = pl.imread(reff)   
 
-
-        ref *= scalec
+        if scalec != 1.0:
+            reftype = ref.dtype
+            ref = (ref.astype(float)*scalec).astype(reftype)
 
         if verbose:
             print "Reference image bands=%s, scaling factor=%f"%(refbands,scalec)
