@@ -1,6 +1,6 @@
-# Simple interactive image annotation tool.
+# Simple python-based interactive image annotation tool
 
-## Requirements:
+## Tested using:
   - matplotlib
   - numpy
   - scipy (for loading Matlab files)
