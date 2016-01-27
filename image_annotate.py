@@ -23,7 +23,6 @@ Keyboard commands:
 """
 
 import matplotlib
-matplotlib.use('macosx')
 
 import pylab as pl
 import numpy as np
@@ -34,8 +33,6 @@ from os.path import exists as pathexists
 
 from matplotlib.nxutils import points_inside_poly
 from matplotlib.patches import Rectangle
-
-from scipy.io import loadmat
 
 
 help_msg = '''Mouse commands:
