@@ -121,7 +121,8 @@ class ROI:
         self.y = [v[1] for v in self.verts]
 
     def inside(self, points):
-        return Path(points).contains_points(self.verts)
+        ins = Path(self.verts).contains_points(points)
+        return ins
 
     def center(self):
         mnx,mxx = np.min(self.x),np.max(self.x)
@@ -264,7 +265,7 @@ class LABELER:
 
     def update_pixel(self, x, y):
         self.spax.clear()
-        pixel = self.img[y,x]
+        pixel = self.img[int(y),int(x)]
         self.spax.plot(self.wvl,pixel)
         self.spax.set_xlim(self.wvlmin,self.wvlmax)
         if self.imgmax != -1.0:
