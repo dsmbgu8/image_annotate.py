@@ -31,7 +31,7 @@ import getopt, sys, os
 from os.path import join as pathjoin
 from os.path import exists as pathexists
 
-from matplotlib.nxutils import points_inside_poly
+from matplotlib.path import Path
 from matplotlib.patches import Rectangle
 
 
@@ -121,7 +121,7 @@ class ROI:
         self.y = [v[1] for v in self.verts]
 
     def inside(self, points):
-        return points_inside_poly(points, self.verts)
+        return Path(points).contains_points(self.verts)
 
     def center(self):
         mnx,mxx = np.min(self.x),np.max(self.x)
